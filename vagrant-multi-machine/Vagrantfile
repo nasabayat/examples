@@ -9,17 +9,20 @@ RAM               = 128   # Default memory size in MB
 
 # Network configuration
 DOMAIN            = ".nat.example.com"
-NETWORK           = "192.168.50."
+NETWORK           = "192.168.99."
 NETMASK           = "255.255.255.0"
 
 # Default Virtualbox .box
 # See: https://wiki.debian.org/Teams/Cloud/VagrantBaseBoxes
 BOX               = 'debian/jessie64'
+#BOX                = 'bento/ubuntu-18.04'
 
 
 HOSTS = {
-   "web" => [NETWORK+"10", RAM, GUI, BOX],
-   "db" => [NETWORK+"11", RAM, GUI, BOX],
+   "Machin-1" => [NETWORK+"11", RAM, GUI, BOX],
+   "Machin-2" => [NETWORK+"12", RAM, GUI, BOX],
+   "Machin-3" => [NETWORK+"13", RAM, GUI, BOX],
+   "Machin-4" => [NETWORK+"14", RAM, GUI, BOX],
 }
 
 ANSIBLE_INVENTORY_DIR = 'ansible/inventory'
