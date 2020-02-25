@@ -19,10 +19,10 @@ BOX                = 'bento/ubuntu-18.04'
 
 
 HOSTS = {
-   "Machin-1" => [NETWORK+"11", RAM, GUI, BOX],
-   "Machin-2" => [NETWORK+"12", RAM, GUI, BOX],
-   "Machin-3" => [NETWORK+"13", RAM, GUI, BOX],
-   "Machin-4" => [NETWORK+"14", RAM, GUI, BOX]
+   "manager-1" => [NETWORK+"11", RAM, GUI, BOX],
+   "manager-2" => [NETWORK+"12", RAM, GUI, BOX],
+   "manager-3" => [NETWORK+"13", RAM, GUI, BOX],
+   "worker-1" => [NETWORK+"14", RAM, GUI, BOX]
 }
 
 ANSIBLE_INVENTORY_DIR = 'ansible/inventory'
