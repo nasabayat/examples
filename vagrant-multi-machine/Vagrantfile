@@ -14,15 +14,15 @@ NETMASK           = "255.255.255.0"
 
 # Default Virtualbox .box
 # See: https://wiki.debian.org/Teams/Cloud/VagrantBaseBoxes
-#BOX               = 'debian/jessie64'
-BOX                = 'bento/ubuntu-18.04'
+BOX               = 'debian/jessie64'
+#BOX                = 'bento/ubuntu-18.04'
 
 
 HOSTS = {
-   "manager-1" => [NETWORK+"11", RAM, GUI, BOX],
-   "manager-2" => [NETWORK+"12", RAM, GUI, BOX],
-   "manager-3" => [NETWORK+"13", RAM, GUI, BOX],
-   "worker-1" => [NETWORK+"14", RAM, GUI, BOX]
+   "manager-1" => [NETWORK+"11", RAM, GUI, BOX]
+#   "manager-2" => [NETWORK+"12", RAM, GUI, BOX],
+#   "manager-3" => [NETWORK+"13", RAM, GUI, BOX],
+#   "worker-1" => [NETWORK+"14", RAM, GUI, BOX]
 }
 
 ANSIBLE_INVENTORY_DIR = 'ansible/inventory'
